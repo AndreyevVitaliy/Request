@@ -46,7 +46,6 @@ def get_text_files():
 
             file_list.append(file)
 
-
     return file_list
 
 
@@ -67,7 +66,6 @@ file_list = get_text_files()
 
 for file in file_list:
     text_file = read_file(file)
-
     translate_result = translate_it(text_file, "de")
     write_file("result_1.txt", translate_result)
     print("Переведен файл {}.".format(file))
